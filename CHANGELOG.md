@@ -6,6 +6,8 @@
 
 ### Feature
 
+- Close object browser when pressing ESC @nzambello
+
 ### Bugfix
 
 - Prevent ua-parser-js security breach. See: https://github.com/advisories/GHSA-pjwm-rvh2-c87w @thet
@@ -311,6 +313,9 @@ https://docs.voltocms.com/upgrade-guide/
 
 ### Bugfix
 
+- Fix outside click handling in object browser @nzambello
+- Prevent form submit when clicking on BlockChooserButton @giuliaghisini
+- Opening the search input in the object browser, it will get the focus @nzambello
 - Fix ObjectBrowserNav items key @nzambello
 - Fix ObjectBrowserNav aria label: id => title @nzambello
 - Fix missing code in `ArrayWidget` from refactored `SelectWidget` @sneridagh
