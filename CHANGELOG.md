@@ -458,6 +458,7 @@ https://docs.voltocms.com/upgrade-guide/
 - Allowing user to paste url in search box in objectBrowser @iFlameing
 - Allowing user to click on the breadcrumbs of objectBrowser @iFlameing
 - `Navigation` and `Breadcrumbs` are `apiExpanders` aware and run the action depending on them @sneridagh
+- Add Image with srcset and lazy loading using Plone scales @nzambello
 
 ### Bugfix
 
