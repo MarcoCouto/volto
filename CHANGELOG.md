@@ -14,6 +14,7 @@
 - Fix overflow table in Content view @giuliaghisini
 - Prevent ua-parser-js security breach. See: https://github.com/advisories/GHSA-pjwm-rvh2-c87w @thet
 - Fix storybook errors in the connected components, api is undefined. Using now a mock of the store instead of the whole thing @sneridagh
+- UniversalLink: handle direct download for content-type File if user is not logged. @giuliaghisini
 
 ### Internal
 
