@@ -17,13 +17,20 @@ import config from '@plone/volto/registry';
  * @param {number} start Start of result batch.
  * @returns {Object} Get vocabulary action.
  */
-export function getVocabulary(vocabNameOrURL, query = null, start = 0) {
+export function getVocabulary(
+  vocabNameOrURL,
+  query = null,
+  start = 0,
+  b_size,
+  subrequest,
+) {
   const { settings } = config;
   // In case we have a URL, we have to get the vocabulary name
   const vocabulary =
     vocabNameOrURL &&
     vocabNameOrURL.replace(`${settings.apiPath}/@vocabularies/`, '');
-  let queryString = `b_start=${start}`;
+  let queryString = `b_start=${start}${b_size ? '&b_size=' + b_size : ''}`;
+
   if (query) {
     queryString = `${queryString}&title=${query}`;
   }
@@ -35,6 +42,7 @@ export function getVocabulary(vocabNameOrURL, query = null, start = 0) {
       op: 'get',
       path: `/@vocabularies/${vocabulary}?${queryString}`,
     },
+    subrequest,
   };
 }
 
@@ -46,7 +54,11 @@ export function getVocabulary(vocabNameOrURL, query = null, start = 0) {
  * @param {string} token Only include results containing this string.
  * @returns {Object} Get vocabulary action.
  */
-export function getVocabularyTokenTitle(vocabNameOrURL, token = null) {
+export function getVocabularyTokenTitle(
+  vocabNameOrURL,
+  token = null,
+  subrequest,
+) {
   const { settings } = config;
   // In case we have a URL, we have to get the vocabulary name
   const vocabulary = vocabNameOrURL.replace(
@@ -58,6 +70,7 @@ export function getVocabularyTokenTitle(vocabNameOrURL, token = null) {
     type: GET_VOCABULARY_TOKEN_TITLE,
     vocabulary: vocabNameOrURL,
     token,
+    subrequest,
     request: {
       op: 'get',
       path: `/@vocabularies/${vocabulary}?token=${token}`,
