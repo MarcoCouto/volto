@@ -15,6 +15,8 @@
 - Prevent ua-parser-js security breach. See: https://github.com/advisories/GHSA-pjwm-rvh2-c87w @thet
 - Fix storybook errors in the connected components, api is undefined. Using now a mock of the store instead of the whole thing @sneridagh
 - UniversalLink: handle direct download for content-type File if user is not logged. @giuliaghisini
+- Fix downloadableObjects default value @giuliaghisini
+
 ### Internal
 
 - Remove bundlesize @tisto
@@ -29,7 +31,7 @@
 - Fix the selection of Maps Block @iRohitSingh
 - UniversalLink: handle direct download for content-type File if user is not logged. @giuliaghisini
 - Fixed ObjectBrowserWidget when is multiple or maximumSelectionSize is not set @giuliaghisini
-- Fix full-width image overlaps the drag handle  @iRohitSingh
+- Fix full-width image overlaps the drag handle @iRohitSingh
 - Fix move item to top of the folder when clicking on move to top action button @iRohitSingh
 
 ### Internal

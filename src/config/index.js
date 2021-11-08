@@ -106,7 +106,7 @@ let config = {
     ToHTMLRenderers,
     ToHTMLOptions,
     imageObjects: ['Image'],
-    downloadableObjects: ['Link'],
+    downloadableObjects: ['File'],
     listingPreviewImageField: 'image',
     customStyleMap: null,
     notSupportedBrowsers: ['ie'],
