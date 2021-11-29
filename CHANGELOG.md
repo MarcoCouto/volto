@@ -4,8 +4,48 @@
 
 ### Breaking
 
-- The block settings schema, which used to sit in `config.blocks.blocksConfig.<blocId>.schema`
-  has been moved to `config.blocks.blocksConfig.<blocId>.layoutSettingsSchema`.
+### Feature
+
+### Bugfix
+
+### Internal
+
+## 14.0.0-alpha.37 (2021-11-26)
+
+### Bugfix
+
+- Fixed object browser selected items number. @giuliaghisini
+- Fix action vocabularies call avoiding regex look behind @nzambello
+
+### Internal
+
+- Fix select family widgets stories in storybook @sneridagh
+
+## 14.0.0-alpha.36 (2021-11-25)
+
+### Bugfix
+
+- Fix regression in actions vocabularies calls because the change to use contextual schemas @sneridagh
+- Include block schema enhancers (main block schema enhancer + variation schema enhancer) when calculating block default data @tiberiuichim
+
+### Internal
+
+- Fix references to old configuration style in apiExpanders documentation @tiberiuichim
+- Add `applySchemaDefaults`, in addition to `applyBlockDefaults`, to allow reuse in object widgets and other advanced scenarios @tiberiuichim
+
+## 14.0.0-alpha.35 (2021-11-24)
+
+### Bugfix
+
+- Fix `isInternalURL` when `settings.internalApiPath` is empty @tiberiuichim
+- Fix external link not supported by Navigation component #2853. @ericof
+- Get Add/Edit schema contextually #2852 @ericof
+
+### Internal
+
+- Upgrade p.restapi to 8.15.2 @sneridagh
+
+## 14.0.0-alpha.34 (2021-11-20)
 
 ### Feature
 
@@ -13,6 +53,10 @@
 - Blocks can now declare, in their block configuration registry,
   a `blockSchema` with a schema factory. This schema will also be used to
   extract a default block value.
+- Apply form defaults from RenderBlocks and block Edit using a new helper, `applyBlockDefaults` @tiberiuichim
+- Now each block config object can declare a schema factory (a function that can produce a schema) and this will be used to derive the default data for the block @tiberiuichim
+
+## 14.0.0-alpha.33 (2021-11-20)
 
 ### Bugfix
 
@@ -32,10 +76,13 @@
   by the header area @ichim-david
 - Folder contents sort dropdown is now also simple as the other dropdowns
   ensuring we have the same behavior between adjecent dropdown @ichim-david
+- Fix documention on block extensions, replace `render` with `template` to match Listing block @tiberiuichim
 
 ### Internal
 
 - Upgrade stylelint to v14 (vscode-stylelint requires it now) @sneridagh
+- Add several more stories for Storybook @tiberiuichim
+- Add 2 new Volto websites by Eau de web for EEA @tiberiuichim
 
 ## 14.0.0-alpha.32 (2021-11-09)
 
