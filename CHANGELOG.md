@@ -16,6 +16,7 @@
 ### Internal
 
 - Update to plone.restapi 8.16.2 (revert missing_value PR) @sneridagh
+- Various local development build improvements @rpatterson
 
 ## 14.0.0-alpha.40 (2021-12-01)
 
