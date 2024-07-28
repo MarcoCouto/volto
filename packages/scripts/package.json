@@ -59,7 +59,7 @@
     "access": "public"
   },
   "dependencies": {
-    "babel-plugin-react-intl": "5.1.17",
+    "babel-plugin-react-intl": "5.1.18",
     "babel-preset-razzle": "3.4.5",
     "commander": "8.2.0",
     "pofile": "1.0.10",
