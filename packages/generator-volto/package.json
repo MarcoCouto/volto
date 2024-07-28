@@ -115,7 +115,7 @@
     "ms": "1.0.0",
     "mz": "2.6.0",
     "ora": "1.2.0",
-    "promise": "7.1.1",
+    "promise": "7.3.1",
     "update-notifier": "^5.0.1",
     "yeoman-generator": "^4.12.0"
   },
