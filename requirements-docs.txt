@@ -1,5 +1,5 @@
 mkdocs==1.2.3
 pymdown-extensions==8.0.1
 Pygments==2.7.4
-mkdocs-material==6.1.0
+mkdocs-material==9.5.32
 jsx-lexer
