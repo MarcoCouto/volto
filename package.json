@@ -321,7 +321,7 @@
     "less": "3.11.1",
     "less-loader": "6.1.0",
     "linkify-it": "3.0.2",
-    "lint-staged": "10.2.2",
+    "lint-staged": "16.0.0",
     "locale": "0.1.0",
     "lodash": "4.17.21",
     "lodash-move": "1.1.1",
