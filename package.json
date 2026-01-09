@@ -277,7 +277,7 @@
     "commander": "8.2.0",
     "connected-react-router": "6.8.0",
     "coveralls": "3.0.2",
-    "cypress": "7.3.0",
+    "cypress": "13.0.0",
     "cypress-axe": "0.12.2",
     "cypress-file-upload": "5.0.7",
     "debug": "4.3.2",
